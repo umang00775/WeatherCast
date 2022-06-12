@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= data.city_name %>'s Weather</title>
+        <link rel="stylesheet" href="show_weather.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <h1 class="city"><%= data.city_name %></h1>
+                <h2>
+                    <span class="temperature"><%= data.tempC %> °C</span>
+                    <span class="mainWeather"><%= data.main %></span>
+                    <img src=<%= data.imgLink %> alt="">
+                </h2>
+            </div>
+
+            <div class="boxContent">
+                <div class="box temp">
+                    <h1 class="heading">Temperature</h1>
+                    <div class="content">
+                        <h1 class="tempC"><%= data.tempC %> °C</h1>
+                        <h1 class="tempF"><%= data.tempF %> °F</h1>
+                        <h1 class="tempK"><%= data.tempK %> K</h1>
+                    </div>
+                </div>
+
+                <div class="box wind">
+                    <h1 class="heading">Wind</h1>
+                    <div class="content">
+                        <h1 class="speed">Speed: <%= data.windSpeed %> m/s</h1>
+                        <h1 class="degree">Degree: <%= data.windDegree %> °</h1>
+                    </div>
+                </div>
+
+                <div class="box time">
+                    <h1 class="heading">Time Zone</h1>
+                    <div class="content">
+                        <h1 class="timeZone">Time Zone: <%= data.timeZone %> UTC</h1>
+                        <h1 class="sunrise">Sunrise: <%= data.sunrise %> UTC</h1>
+                        <h1 class="sunset">Sunset: <%= data.sunset %> UTC</h1>
+                    </div>
+                </div>
+
+                <div class="box other">
+                    <h1 class="heading">Other</h1>
+                    <div class="content">
+                        <h1 class="pressure">Pressure: <%= data.pressure %> hPa</h1>
+                        <h1 class="humidity">Humidity: <%= data.humidity %> %</h1>
+                        <h1 class="visibility">Visibility: <%= data.visibility %> m</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

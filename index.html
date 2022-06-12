@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Cast By Umang :)</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+        <div class="all">
+            <div class="container">
+                <h1>Weather Cast</h1>
+                <form action="/see_weather" method="post">
+                    <input type="hidden" name="latitude" id="lat">
+                    <input type="hidden" name="longitude" id="long">
+                    <input type="hidden" name="successCode" id="code">
+                    <p id="error"></p>
+                    <button type="submit" >See Cast <span>→</span></button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

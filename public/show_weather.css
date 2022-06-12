@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.container{
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #00C9FF; 
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  
+    background: linear-gradient(to right, #92FE9D, #00C9FF);
+    background-size: cover;
+}
+
+.main{
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 35px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.main h1{
+    font-size: 45px; 
+}
+
+.main h2 .temperature{
+    font-size: 30px;
+}
+
+.main h2 .mainWeather{
+    font-size: 25px;
+}
+
+.main h2 img{
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    margin-bottom: -20px;
+}
+
+.boxContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box{
+    color: black;
+    height: 240px;
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.box > .heading{
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box > .content{
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.box > .content > h1{
+    font-size: 20px;
+}
