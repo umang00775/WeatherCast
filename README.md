@@ -1,5 +1,5 @@
 <h3>This project allows user to know weather related information by just allowing location access 😊</h3>
-<h1>https://weathercast-by-umang.herokuapp.com/</h1>
+<h4><a href="https://weathercast-by-umang.herokuapp.com/">Visit site :)</h4>
 
 This project is created with <a href="openweathermap.org/api">open weather map's API</a>
 
